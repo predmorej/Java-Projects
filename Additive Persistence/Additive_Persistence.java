@@ -20,25 +20,55 @@ class Additive_Persistence
         this.count = 0;
     }
     
-    //returns da rules
+    
+    /*
+    returns da rules
+    @return rules   the rules of additive persistence
+    */
     public String getRules()
     {
         return rules;
     }
 
-    //returns the number given to check additive persistence
+
+    /*
+    returns the number given to check additive persistence
+    @return number   the given number to check its additive persistence
+    */
     public String getNumber()
     {
         return number;
     }
 
-    //returns the number of iterations (the additive persistence)
+
+    //Just for testing
+    public void setNumber(String inNum)
+    {
+        this.number = inNum;
+    }
+
+
+    /*
+    returns the number of iterations (the additive persistence)
+    @return count   the amount of iterations counted - its additive persistence
+    */
     public int getCount()
     {
         return count;
     }
 
-    //gets input from user to get the number they wish to see its additive persisstence
+
+    //just for testing
+    public void resetCount()
+    {
+        this.count = 0;
+    }
+
+
+    /*
+    gets input from user to get the number they wish to see its additive persisstence
+    @return number   the given number to check its additive persistence
+    */
     public String getNewNumber()
     {
         Scanner in = new Scanner(System.in);
@@ -47,8 +77,13 @@ class Additive_Persistence
         return number;
     }
 
-    //steps through the given number's additions and counts the iterations. it does the math for additive persistence.
-    public void doMath()
+
+    /*
+    steps through the given number's additions and counts the iterations. it does the math for additive persistence.
+    @return  number   the given number to check its additive persistence
+    @param  inNumber    mostly just there for testing, its this.number
+    */
+    public int doMath(String inNumber)
     {
         //get arraylist to work with
         String[] inNums = number.split("");
@@ -57,7 +92,7 @@ class Additive_Persistence
         {
             numList.add(i);
         }
-
+   
         //the math. it ends when the number becomes a single digit 
         while (numList.size() != 1)
         {
@@ -77,7 +112,9 @@ class Additive_Persistence
             }
             this.count++;
         }
+        return count;
     }
+
 
     //mostly just prints the number of iterations it took
     public void end()
@@ -88,20 +125,24 @@ class Additive_Persistence
     }
 }
 
+
+
 //main - whatever the style is called wherein main just calls stuff instead of doing the work inside it. 
 class gameDemo
 {
     public static void main(String[] args)
     {
         Additive_Persistence newDemo = new Additive_Persistence();
+        String inString = null;             //just for testing
 
         System.out.println(newDemo.getRules());
         System.out.println("Please enter number to get its additive persistence: ");
 
-        newDemo.getNewNumber();
-        newDemo.doMath();
+        inString = newDemo.getNewNumber();
+        newDemo.doMath(inString);
         newDemo.end();  
     }
 }   
+
 
 //probably could have used recursion to be more efficient
