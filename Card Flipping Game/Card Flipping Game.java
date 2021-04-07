@@ -49,33 +49,22 @@ class cardgame
     {
         return length;
     }
-}
 
-
-
-/* The actual game*/
-class gameDemo
-{
-    public static void main(String[] args) 
+    public Boolean checkDeck()
     {
-        System.out.println("\n");           //just for readability
-        
-
-        cardgame newGame = new cardgame();  //creates card game   
         boolean correct = false;
-        boolean playable = false;
-
-        newGame.PrintRules();
+        boolean playable = false; 
+        Scanner inCheck = new Scanner(System.in);
 
         //check if only 0s and 1s, will only leave loop if so
         while (playable != true && correct != true)
         {
             System.out.println("Please enter card order using ONLY '0's and '1's. Must have at least one '1'. (EX: 00101011)");
-            Scanner in = new Scanner(System.in);
-            String newCards = in.next();
+            
+            String newCards = inCheck.next();
             System.out.println("");       //just for readability
 
-            newGame.setCards(newCards);
+            this.setCards(newCards);
 
             //begin checks
             for (int i = 0; i < newCards.length(); i++)
@@ -98,6 +87,28 @@ class gameDemo
                 }
             }
         }
+        return true;
+    }
+}
+
+
+
+/* The actual game*/
+class gameDemo
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("\n");           //just for readability
+        
+
+        cardgame newGame = new cardgame();  //creates card game   
+        boolean correct = false;
+        
+
+        newGame.PrintRules();
+
+        newGame.checkDeck();
+        boolean playable = true;            //can only be true if it passes the deckCheck
         
 
 
@@ -114,11 +125,12 @@ class gameDemo
 
 
         //begin game
-        while (playable == true && cardList.size() > 1)         //while there is still a "1" in the deck and more than one card
+        while (cardList.size() > 1 && playable == true)         //while there is still a "1" in the deck and more than one card
         {
             System.out.println("Your cards are: " + cardList);
             System.out.println("Choose which face up card to remove");
 
+            
             correct = false;
             int cardNum = 100;
             int c = 100;
@@ -222,7 +234,6 @@ class gameDemo
 
             cardList.remove(cardNum);           //removes the chosen card
 
-
             //if there is a single "1" left in the cards, there are still moves to play 
             playable = false; 
             for (int i = 0; i < cardList.size(); i++)
@@ -239,15 +250,18 @@ class gameDemo
         {
             if (cardList.get(0).equals("1"))
             {
+                System.out.println("Your cards are: " + cardList);
                 System.out.println("\n" + "Congratulations, you are out of cards - Win");
             }
             else
             {
+                System.out.println("Your cards are: " + cardList);
                 System.out.println("\n" + "You are left with a single face-down card - loss");
             }
         }
         else
         {
+            System.out.println("Your cards are: " + cardList);
             System.out.println("\n" + "There are no more cards to play - loss");
         }
 
