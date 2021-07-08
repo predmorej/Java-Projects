@@ -5,4 +5,4 @@ Currently writing new practice programs
 
   -working on D&D character autobuilder
   
-    -working on race class
+    -Working on printing character stats to screen or seperate doc
