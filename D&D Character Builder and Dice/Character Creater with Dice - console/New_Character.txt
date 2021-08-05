@@ -1,0 +1,100 @@
+
+----------------------------------
+
+Name: Hadarai
+Sex: Male
+Race: Half-Elf
+Class: Rogue
+Background: Folk Hero
+Alignment: Neutral
+
+Appearence: 
+Size: 6.0 Feet Tall, 169lbs;    Size = Medium
+Age: 31
+Skin Tone: Deep Tan
+Hair Color: Black
+Eye Color: Electric Blue
+
+Personality And Background:
+Background Name: Folk Hero
+Background Description: You come from a humble social rank, but you are destined for so much more. Already the people of your home 
+   village regard you as their champion, and your destiny calls you to stand against the tyrants and monsters 
+   that threaten the common folk everywhere.
+Personal Trait: I misuse long words in an attempt to sound smarter.
+Ideal: Fairness. No one should get preferential treatment before the law, and no one is above the law. (Lawful)
+Bond: I worked the land, I love the land, and I will protect the land.
+Flaw: Iâ??m convinced of the significance of my destiny, and blind to my shortcomings and the risk of failure.
+
+
+Ability Scores: 
+Strength: 13       Mod: 1
+Constitution: 14   Mod: 2
+Dexterity: 16      Mod: 3
+Intelligence: 16   Mod: 3
+Wisdom: 12         Mod: 1
+Charisma: 13       Mod: 1
+
+Stats: 
+Hit Points: 10
+Armor Class: 13
+Speed: 30
+Hit Die: d8
+
+Proficient in: 
+Saving Throws: Dexterity, Intelligence.
+Skills: Acrobatics, Persuasion, Performance, Intimidation, Nature, Athletics, Animal Handling, Survival.
+Weapons: Simple Weapons, Hand Crossbow, Longsword, Rapier, Shortsword.
+Armor: Light Armor.
+Tools: Thieves Tools, Potterâ??s tools, Vehicles (Land).
+
+Languages: 
+Common, Elvish, Primordial.
+
+
+Items: 
+Gold amount: 70
+Weapons: Rapier, Shortbow, Arrows, Dagger.
+Equipment: Explorer's Pack, Leather Armor, Thieve's Tools, Cookâ??s utensils, 
+           A shovel, An iron pot, A set of common clothes, (Add to Gold) A belt pouch containing 15 gp.
+
+
+
+-----Features Start----- 
+Name: Sneak Attack
+Description: You know how to strike subtly and exploit a foeâ??s distraction. Once per turn, you can deal an extra 
+   1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack 
+   must use a finesse or a ranged weapon. You donâ??t need advantage on the attack roll if another enemy of 
+   the target is within 5 feet of it, that enemy isnâ??t incapacitated, and you donâ??t have disadvantage on 
+   the attack roll. The amount of the extra damage increases as you gain levels in this class, as shown 
+   in the Sneak Attack column of the Rogue table. (Currently 1d6)
+
+Name: Thieves' Cant
+Description: During your rogue training you learned thievesâ?? cant, a secret mix of dialect, jargon, and code that 
+   allows you to hide messages in seemingly normal conversation. Only another creature that knows thievesâ?? cant 
+   understands such messages. It takes four times longer to convey such a message than it does to speak the same 
+   idea plainly. In addition, you understand a set of secret signs and symbols used to convey short, simple messages, 
+   such as whether an area is dangerous or the territory of a thievesâ?? guild, whether loot is nearby, or whether the 
+   people in an area are easy marks or will provide a safe house for thieves on the run.
+
+Name: DarkVision
+Description: Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 
+   60 feet of you as if it were bright light, and in darkness as if it were dim light.
+
+Name: Fey Ancestry
+Description: You have advantage on saving throws against being charmed, and magic canâ??t put you to sleep.
+
+Name: Rustic Hospitality
+Description: Since you come from the ranks of the common folk, you fit in among them with ease. You can find a place 
+   to hide, rest, or recuperate among other commoners, unless you have shown yourself to be a danger to them. 
+   They will shield you from the law or anyone else searching for you, though they will not risk their lives for you.
+
+Name: Defining Event
+Description: You previously pursued a simple profession among the peasantry, perhaps as a farmer, miner, servant, shepherd, 
+   woodcutter, or gravedigger. But something happened that set you on a different path and marked you for greater things.
+   This event was: Recruited into a lordâ??s army, I rose to leadership and was commended for my heroism..
+-----Features End-----
+
+
+
+----------------------------------
+
